@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<style>
+    .form-box {
+        width: fit-content;
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+        margin: auto;
+        margin-top: 20px;
+        background-color: #dddddd;
+        border-radius: 5px;
+    }
+    .form-heading{
+        margin: 0px 0px 10px 0px;
+        text-align: center;
+    }
+    .field-box {
+        height: 25px;
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 1px;
+    }
+    textarea {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #ccc;
+    }
+</style>
+<body>
+    <div class="form-box">
+        <h2 class="form-heading">Contact Form</h2>
+        <form>
+            <div style="margin: 5px 0;">
+                <label for="full">Full Name:</label><br>
+                <input class="field-box" type="text" name="full" placeholder="Your fullname here...">
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="email">Email:</label><br>
+                <input class="field-box" type="email" name="email" placeholder="Your email here...">
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="pass">Password:</label><br>
+                <input class="field-box" type="password" name="pass" placeholder="Your password here...">
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="mobile">Phone:</label><br>
+                <input class="field-box" type="tel" name="mobile" placeholder="Your phone here...">
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="age">Age:</label><br>
+                <input class="field-box" type="number" name="age" placeholder="Your age here...">
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="date">Choose a date :</label><br>
+                <input class="field-box" type="date" name="date">
+            </div>
+            <div style="margin: 5px 0;">
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="male">
+                <label>Male</label>
+                <input type="radio" name="gender" value="female">
+                <label>Female</label>
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="course">Course:</label><br>
+                <input type="checkbox" name="course" value="mern">
+                <label for="course">MERN</label>
+                <input type="checkbox" name="course" value="java">
+                <label for="course">Java</label>
+                <input type="checkbox" name="course" value="react">
+                <label for="course">React</label>
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="color">Choose a product color :</label><br>
+                <input class="field-box" type="color" name="color">
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="city">Choose your city :</label><br>
+                <select class="field-box" name="city">
+                    <option value="noida">NOIDA</option>
+                    <option value="delhi">DELHI</option>
+                    <option value="gurugram">GURUGRAM</option>
+                    <option value="jaipur">JAIPUR</option>
+                    <option value="agra">AGRA</option>
+                </select>
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="file">Choose a file :</label><br>
+                <input class="field-box" type="file" name="file" multiple>
+            </div>
+            <div style="margin: 5px 0;">
+                <label for="message">Submit your feedback :</label><br>
+                <textarea name="message" placeholder="Type your feedback here..."></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
